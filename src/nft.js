@@ -15,6 +15,7 @@ const Nft = ({ nft }) => {
           }}
         >
           <iframe
+          loading="lazy"
             className="card-img-top"
             style={{ maxHeight: "15rem", minHeight: "15rem",border:"0" }}
             src={`https://arweave.net/${nft.id}`}
