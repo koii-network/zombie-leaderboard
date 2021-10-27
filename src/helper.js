@@ -18,7 +18,7 @@ export function fetchNFTs() {
         .catch((_) => {
           nfts = {};
           resolve(nfts);
-          console.log(nfts)
+          console.log(nfts);
         });
     else return nfts;
   });
@@ -31,18 +31,27 @@ export async function mapNftToZombies() {
   await fetchNFTs();
   let zKeys = keys(ZombieList);
   let nKeys = keys(nfts);
-  let zombies = []
+  let zombies = [];
   let counter = 0;
-  for (const i of nKeys) {
-    if (!zKeys.includes(i)) { ////////// CAUTION ///////////
-      zombies.push({
-        id:i,
-        name:ZombieList[i]?.name||"namee",
-        description:ZombieList[i]?.description ||"description",
-        views:nfts[i]
-      })
-    }
+  zKeys.sort((a, b) => (nfts[b] || 0) - (nfts[a] || 0));
+  for (const i of zKeys) {
+    // if (!zKeys.includes(i)) { ////////// CAUTION ///////////
+    //   zombies.push({
+    //     id:i,
+    //     name:ZombieList[i]?.name||"namee",
+    //     description:ZombieList[i]?.description ||"description",
+    //     views:nfts[i]
+    //   })
+    // }
+    zombies.push({
+      id:i,
+      name:ZombieList[i].name,
+      description:ZombieList[i].description,
+      views:nfts[i] || 0
+    })
     if (counter++ === 99) break;
   }
+    
+  console.log(zombies);
   return zombies;
 }
