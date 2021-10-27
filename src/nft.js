@@ -2,12 +2,12 @@ import React from "react";
 
 const Nft = ({ nft }) => {
   return (
-    <div>
-      <div className="col-xl-3 col-lg-4 col-md-5 col-md-5 col-sm-12  mb-5">
+
+      <div className="col-xl-3 col-lg-6 col-md-12 col-sm-12  mb-5">
         <div
           className="card"
           style={{
-            width: "18rem",
+            width: "100%",
             margin: "0 auto",
             paddingBottom: "10px",
             minHeight: "500px",
@@ -45,7 +45,7 @@ const Nft = ({ nft }) => {
           </div>
         </div>
       </div>
-    </div>
+
   );
 };
 
