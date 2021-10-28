@@ -1,4 +1,5 @@
 import React from "react";
+import LazyLoad from 'react-lazyload';
 
 const Nft = ({ nft }) => {
   return (
@@ -14,6 +15,7 @@ const Nft = ({ nft }) => {
             boxShadow: "2px 3px 7px rgb(0 0 0 / 0.2)",
           }}
         >
+          <LazyLoad offset={100}>
           <iframe
           loading="lazy"
             className="card-img-top"
@@ -22,6 +24,7 @@ const Nft = ({ nft }) => {
             title={nft.id}
             alt="nft"
           />
+          </LazyLoad>
           <div className="card-body">
             <h5 className="card-title">
              {nft.name}

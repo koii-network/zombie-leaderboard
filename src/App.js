@@ -3,8 +3,9 @@ import { Button } from "react-bootstrap";
 import { getZombiesList, mapNftToZombies, fetchNFTs } from "./helper";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { useEffect, useState,Suspense,lazy} from "react";
-// import Nft from './nft';
-const Nft = lazy(()=>import("./nft"));
+
+import Nft from './nft';
+// const Nft = lazy(()=>import("./nft")
 
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
     mapNftToZombies().then(setZombies);
   }, []);
   return (
-    <Suspense fallback={<div>Loading.....</div>}>
+
     <div className="App">
       <div className="container">
         <h3
@@ -29,7 +30,7 @@ function App() {
         </div>
       </div>
     </div>
-    </Suspense>
+
   );
 }
 
