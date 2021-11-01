@@ -27,8 +27,9 @@ const Nft = ({ nft }) => {
           </LazyLoad>
           <div className="card-body">
             <h5 className="card-title">
-             {nft.name}
+             {nft.id}
             </h5>
+            {/*
             <p
               className="card-text"
               style={{
@@ -40,6 +41,7 @@ const Nft = ({ nft }) => {
             >
               {nft.description||"description"}
             </p>
+            */}
             <p style={{ display: "inline-block", paddingRight: "5px" }}>
              <b>Views:</b> {nft.views}
               <a style={{ display: "block" }} target="_blank" href={`https://koi.rocks/content-details/${nft.id}`}  className="btn btn-primary">
