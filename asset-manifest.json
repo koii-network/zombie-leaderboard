@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/zombie-leaderboard/static/css/main.afd7172b.chunk.css",
+    "main.js": "/zombie-leaderboard/static/js/main.94629f90.chunk.js",
+    "main.js.map": "/zombie-leaderboard/static/js/main.94629f90.chunk.js.map",
+    "runtime-main.js": "/zombie-leaderboard/static/js/runtime-main.c55c12be.js",
+    "runtime-main.js.map": "/zombie-leaderboard/static/js/runtime-main.c55c12be.js.map",
+    "static/css/2.4659568d.chunk.css": "/zombie-leaderboard/static/css/2.4659568d.chunk.css",
+    "static/js/2.2573d48a.chunk.js": "/zombie-leaderboard/static/js/2.2573d48a.chunk.js",
+    "static/js/2.2573d48a.chunk.js.map": "/zombie-leaderboard/static/js/2.2573d48a.chunk.js.map",
+    "static/js/3.893f386f.chunk.js": "/zombie-leaderboard/static/js/3.893f386f.chunk.js",
+    "static/js/3.893f386f.chunk.js.map": "/zombie-leaderboard/static/js/3.893f386f.chunk.js.map",
+    "index.html": "/zombie-leaderboard/index.html",
+    "static/css/2.4659568d.chunk.css.map": "/zombie-leaderboard/static/css/2.4659568d.chunk.css.map",
+    "static/css/main.afd7172b.chunk.css.map": "/zombie-leaderboard/static/css/main.afd7172b.chunk.css.map",
+    "static/js/2.2573d48a.chunk.js.LICENSE.txt": "/zombie-leaderboard/static/js/2.2573d48a.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c55c12be.js",
+    "static/css/2.4659568d.chunk.css",
+    "static/js/2.2573d48a.chunk.js",
+    "static/css/main.afd7172b.chunk.css",
+    "static/js/main.94629f90.chunk.js"
+  ]
+}
